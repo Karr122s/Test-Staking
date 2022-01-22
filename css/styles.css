@@ -1,0 +1,195 @@
+.bg {
+    background-image: url("../img/bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: -100;
+    top: 0;
+
+}
+
+
+/* Title */
+.title {
+    color: #fafafa;
+    height: auto;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    grid-column: 2;
+    font-size: 4vmin;
+    align-self: center;
+}
+
+
+/* Account Info */
+.header-info {
+    height: 10vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: #393939;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    z-index: 100;
+}
+.header-info button {
+    height: 30%;
+    width: 40%;
+    align-self: center;
+    justify-self: center;
+    padding: 0;
+    border-radius: 32px;
+}
+
+.header-info .balances {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.header-info p {
+    color: #fafafa;
+    text-align: center;
+    margin: 0;
+}
+
+.account-address {
+    text-align: center;
+    align-self: center;
+    justify-self: center;
+    background-color: rgba(115,114,114,.6);
+    border-color: #2fc19a;
+    border-width: 2px;
+    height: 4vmin;
+    width: 40%;
+    padding: 0;
+    border-radius: 32px;
+    line-height: 4vmin;
+    border: 1.5px solid #2fc19a;
+}
+
+/* Not Holder Alert */
+.notHolder {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.notHolder-alert {
+    color: #fafafa;
+    height: 10vh;
+    line-height: 10vh;
+    font-weight: bold;
+    font-size: 4vmin;
+}
+
+.notApproved {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Card */
+.cards {
+    display: flex;
+    justify-content: space-around;
+    height: auto;
+    margin: auto auto;
+}
+
+.staking-card {
+    margin: auto 2vmin;
+    height: auto;
+    width: 40vh;
+    background-color: #393939;
+    border-radius: 32px;
+    box-shadow: 0 2px 4px 0 rgba(14,30,37,.12),0 2px 16px 0 rgba(14,30,37,.32);
+    padding: 2rem 1.5rem;
+    border: 1px solid rgb(0 0 0/8%);
+}
+
+.staking-card-header h2, .staking-card-header p {
+    text-align: end;
+    color: #fafafa;
+}
+
+
+.staking-card-body p {
+    color: #fafafa;
+}
+
+
+.staking-card-footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.staking-card-footer button {
+    margin: 1vmin 0;
+    width: 100%;
+    font-weight: bold;
+}
+
+span {
+    font-weight: bold;
+}
+
+#ownedNfts {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: auto auto;
+    gap: 3vmin;
+    margin-top: 20vmin;
+    margin-bottom: 20vmin;
+}
+
+.nftCard {
+    align-self: center;
+    justify-self: center;
+}
+.nftCard .btn {
+    width: 100%;
+}
+
+
+/* Stake Menu */
+.stakeMenu {
+
+    position: fixed;
+    top: 10vh;
+    margin: auto auto;
+    z-index: 99;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+
+
+}
+
+.stakeMenu h3 {
+    color: #fafafa;
+    font-size: 4vmin;
+    grid-row: 1;
+    align-self: center;
+    grid-column: 2;
+}
+
+.stakeMenuHeader {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.cross {
+    font-size: 5vmin;
+    color: #fafafa;
+    grid-column: 3;
+    align-self: center;
+    justify-self: center;
+    cursor: pointer;
+}
