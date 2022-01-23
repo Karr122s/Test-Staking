@@ -1,7 +1,7 @@
 const stakingAddress = "0xe80D0755132582fd188F32230f79A528612735FB";
 var stakingContract;
 
-const nftContractAddress = "0xD8Bf75ce1cadc8BA2833a4622984AA664eb16CbD";
+const nftContractAddress = "0xF36Fa51fE0C954975cac37cdf2069122b9047EF3";
 var nftContract;
 
 var userAccount;
