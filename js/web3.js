@@ -156,10 +156,10 @@ async function stakingPools() {
       nftInfo = res;
     });
     if (nft != 0) {
-      nftInfo = nftInfo.replace('ipfs://', '');
-      var response = await fetch(`https://ipfs.io/ipfs/${nftInfo}`);
+      nftInfo = nftInfo.replace('https://gateway.pinata.cloud/ipfs/', '');
+      var response = await fetch(`https://gateway.pinata.cloud/ipfs/${nftInfo}`);
       var json = await response.json();
-      var image = "https://ipfs.io/ipfs/" + json.image.replace('ipfs://', '');
+      var image = "https://gateway.pinata.cloud/ipfs/" + json.image.replace('https://gateway.pinata.cloud/ipfs/', '');
       var nftStaked;
       await stakingContract.methods.checkStaker(nft).call({from:userAccount}).then(res => {
         nftStaked = res;
